@@ -1,45 +1,118 @@
+/* GENERAL STYLES */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(120deg, #f7f7f7, #e3f2fd);
     color: #333;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
+/* HEADER */
 header {
     text-align: center;
     padding: 20px;
-    background-color: #222;
+    background: #673ab7;
     color: white;
+    font-size: 1.2em;
 }
 
+header button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background: #ff9800;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+header button:hover {
+    background: #e65100;
+}
+
+/* SECTIONS */
 section {
     margin: 20px;
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
 }
 
-h2 {
-    border-bottom: 2px solid #222;
-    padding-bottom: 5px;
+section:hover {
+    transform: scale(1.02);
 }
 
+/* REPO SECTIONS */
 .repo-section {
     margin-bottom: 20px;
     padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    transition: 0.3s;
+    border-left: 6px solid #673ab7;
+}
+
+.repo-section:hover {
+    transform: scale(1.05);
+    background: #e8f5e9;
 }
 
 .repo-section h3 a {
     text-decoration: none;
-    color: #0066cc;
+    color: #673ab7;
     font-weight: bold;
+    transition: 0.3s;
 }
 
-.repo-section p {
-    margin: 5px 0;
+.repo-section h3 a:hover {
+    color: #ff5722;
+}
+
+.repo-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.repo-button:hover {
+    background: #d84315;
+}
+
+/* DARK MODE */
+.dark-mode {
+    background: linear-gradient(120deg, #121212, #424242);
+    color: #fff;
+}
+
+.dark-mode header {
+    background: #1e88e5;
+}
+
+.dark-mode section {
+    background: #303030;
+}
+
+.dark-mode .repo-section {
+    background: #424242;
+    border-left-color: #1e88e5;
+}
+
+.dark-mode .repo-button {
+    background: #ff9800;
+}
+
+.dark-mode .repo-button:hover {
+    background: #e65100;
 }
