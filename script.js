@@ -4,11 +4,20 @@ document.addEventListener("DOMContentLoaded", function() {
     // Define repositories manually with details
     const repositories = [
         {
-            name: "UC_Computer_Programming_2",
+            name: "UC Computer Programming 2",
             url: "https://github.com/HazlettSammy/UC_Computer_Programming_2",
             description: "A collection of projects and assignments from my Computer Programming 2 course at the University of Cincinnati.",
-            details: "This repository contains various C++ projects demonstrating object-oriented programming, data structures, and algorithms. Topics covered include recursion, linked lists, and file I/O."
+            details: "This repository contains various Java projects demonstrating object-oriented programming, data structures, and algorithms. Topics covered include recursion, linked lists, and file I/O."
+
+        
         },
+
+        {
+            name: "UC Computer Programming 2",
+            url: "https://github.com/HazlettSammy/UC_Computer_Programming_2",
+            description: "A collection of projects and assignments from my Computer Programming 2 course at the University of Cincinnati.",
+            details: "This repository contains various Java projects demonstrating object-oriented programming, data structures, and algorithms. Topics covered include recursion, linked lists, and file I/O."
+        }
         // Add more repositories in the same format:
         // {
         //     name: "Another_Repo",
